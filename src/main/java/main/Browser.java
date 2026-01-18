@@ -21,15 +21,15 @@ public class Browser {
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/saurabh.yadav/Downloads/chromedriver-mac-arm64/chromedriver");
         WebDriver driver = new ChromeDriver(options);
 
         //Firefox
-        System.setProperty("webdriver.gecko.driver", "/Users/rahulshetty/Documents/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/Users/saurabh.yadav/Downloads/chromedriver-mac-arm64/geckodriver");
         WebDriver driver1 = new FirefoxDriver();
 
         //Microsoft Edge
-        System.setProperty("webdriver.edge.driver", "/Users/rahulshetty/Documents/msedgedriver");
+        System.setProperty("webdriver.edge.driver", "/Users/saurabh.yadav/Downloads/chromedriver-mac-arm64/msedgedriver");
         WebDriver driver2 = new EdgeDriver();
 
 

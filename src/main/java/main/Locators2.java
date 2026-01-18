@@ -10,7 +10,7 @@ import org.testng.Assert;
     public static void main(String[] args) throws InterruptedException {
         // TODO Auto-generated method stub
         String name = "Rahul";
-        System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/saurabh.yadav/Downloads/chromedriver-mac-arm64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); //implicit wait - 5 seconds time out
         String[] password =  getPassword(driver);

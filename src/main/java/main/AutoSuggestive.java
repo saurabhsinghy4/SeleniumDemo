@@ -11,7 +11,7 @@ public class AutoSuggestive {
     //Dynamic Dropdown with indexes
     public static void main(String[] args) throws InterruptedException {
         // TODO Auto-generated method stub
-        System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/saurabh.yadav/Downloads/chromedriver-mac-arm64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshattyacademy.com/dropdownsPractice/");        //URL in the browser
         driver.findElement(By.id("autosuggest")).sendKeys();

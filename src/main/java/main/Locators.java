@@ -11,7 +11,7 @@ public class Locators {
 
     // TODO Auto-generated method stub
 
-        System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/saurabh.yadav/Downloads/chromedriver-mac-arm64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); //implicit wait - 5 seconds time out
 
