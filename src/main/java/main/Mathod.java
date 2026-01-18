@@ -10,11 +10,12 @@ public class Mathod {
 
     }
 
-    public String getData()
+    public static String getData()
     {
         System.out.println("Har Har Mahadev");
         return "Saurabh Singh";
     }
+
     public static String getData1()
     {
         System.out.println("Jai Mahakaal");

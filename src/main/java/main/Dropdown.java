@@ -1,5 +1,6 @@
 package main;
 
+import io.cucumber.java.en.Given;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,6 +37,13 @@ public class Dropdown {
             Assert.assertTrue(false,"Disabled");
         }
 
+
+    }
+    @Given("a method exists")
+    public static void a_method_exists()
+    {
+        Mathod.getData1();
+        App.getData();
     }
 
 }

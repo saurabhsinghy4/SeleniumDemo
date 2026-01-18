@@ -165,8 +165,8 @@ public class App {
 
   }
 
-  public String getData() {
-      return "";
+  public static String getData() {
+      return "Anything";
   }
 }
 
