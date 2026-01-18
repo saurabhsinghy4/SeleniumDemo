@@ -1,6 +1,8 @@
 package main;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -40,8 +42,21 @@ public class Dropdown {
 
     }
     @Given("a method exists")
-    public static void a_method_exists()
+    public static void getData()
     {
+        Mathod.getData1();
+        App.getData();
+    }
+
+    @When("Click on run")
+    public void click_on_run() {
+        // Write code here that turns the phrase above into concrete actions
+        Mathod.getData1();
+        App.getData();
+    }
+    @Then("Return a String")
+    public void return_a_string() {
+        // Write code here that turns the phrase above into concrete actions
         Mathod.getData1();
         App.getData();
     }
