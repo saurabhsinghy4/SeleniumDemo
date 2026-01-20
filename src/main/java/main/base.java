@@ -13,6 +13,7 @@ public class base {
         // TODO Auto-generated method stub
         System.setProperty("webdriver.chrome.driver", "/Users/saurabh.yadav/Downloads/chromedriver-mac-arm64/chromedriver");
         WebDriver driver = new ChromeDriver();
+        int j=0;
 
         String[] itemsNeeded = {"Cucumber", "Bocolli", "Beetroot"};
 
@@ -22,7 +23,9 @@ public class base {
 
         for(int i = 0; i<products.size(); i++)
         {
-            String name = products.get(i).getText();
+            //Brocolli - 1 Kg  actual text
+            String[] name = products.get(i).getText().split("-");
+            String formattedName = name[0].trim();
             //format it to get the actual vegetable name
             // covert array into the array list for easy search
             //Check whether name you extracted is present in arrayList or not
@@ -30,10 +33,16 @@ public class base {
 
             List itemsNeededList = Arrays.asList(itemsNeeded);
 
-            if(itemsNeededList.contains(name))
+            int j=0;
+            if(itemsNeededList.contains(formattedName))
             {
+                j++;
                 // Click on the add to card
                 driver.findElement(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
+                // 3 time
+                if (j==3)
+                    break;
+
 
             }
         }
