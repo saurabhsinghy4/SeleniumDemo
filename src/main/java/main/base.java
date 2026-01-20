@@ -23,7 +23,7 @@ public class base {
         for(int i = 0; i<products.size(); i++)
         {
             String name = products.get(i).getText();
-
+            //format it to get the actual vegetable name
             // covert array into the array list for easy search
             //Check whether name you extracted is present in arrayList or not
             //
